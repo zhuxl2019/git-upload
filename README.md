@@ -27,3 +27,4 @@ $ eval "$(ssh-agent -s)" #如果git clone 网址出错，需要执行这两步
 & git commit -m "test"  #引号内为添加的注释内容，不能
 & git push https://用户名@github.com/用户名/仓库名.git     #弹出框输入GitHub登陆密码，提交成功
 & git branch -a
+& git checkout branch1
