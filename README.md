@@ -1,5 +1,6 @@
 # git-upload
 #linux本地上传GitHub
+
 一 创建本地RSA
 & cd ~/.ssh
 & ll #查看是否有RSA
@@ -7,10 +8,13 @@
 $ eval "$(ssh-agent -s)" #如果git clone 网址出错，需要执行这两步
 & ssh-add
 & cat id_rsa.pub   #查看内容，全部复制内容
+
 二 复制公钥到GitHub
 在GitHub中Settings菜单，点击SSH and GPG keys,点击New SSH key,写标识，粘贴id_rsa.pub内容，点击Add SSH key.
+
 三 创建远程仓库
 点击New，填写repository name ，勾选Initialize this repository with a README后，就可以下一步了
+
 四 测试
 & mkdir php   #在任意目录创建
 & cd php
